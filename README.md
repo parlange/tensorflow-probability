@@ -8,3 +8,7 @@ https://blog.tensorflow.org/2021/02/variational-inference-with-joint-distributio
 **Bayesian Neural Networks (BNN)**
 
 https://keras.io/examples/keras_recipes/bayesian_neural_networks/
+
+**Hamiltonian Monte Carlo**
+
+https://www.tensorflow.org/probability/api_docs/python/tfp/mcmc/HamiltonianMonteCarlo
