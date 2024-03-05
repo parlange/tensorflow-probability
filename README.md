@@ -3,7 +3,7 @@
 **Variational Inference (VI)**
 
 https://www.tensorflow.org/probability/examples/Variational_Inference_and_Joint_Distributions
-https://blog.tensorflow.org/2021/02/variational-inference-with-joint-distributions-in-tensorflow-probability.html
+https://blog.tensorflow.org/2021/02/variational-inference-with-joint-distributions-in-tensorflow-probability
 
 **Bayesian Neural Networks (BNN)**
 
