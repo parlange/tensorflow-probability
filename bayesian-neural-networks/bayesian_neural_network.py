@@ -1,3 +1,4 @@
+
 # Copyright 2018 The TensorFlow Probability Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,13 +67,11 @@ flags.DEFINE_integer('batch_size',
                      default=128,
                      help='Batch size.')
 flags.DEFINE_string('data_dir',
-                    default=os.path.join(os.getenv('TEST_TMPDIR', '/tmp'),
-                                         'bayesian_neural_network/data'),
+                    default=os.path.join(os.getenv('HOME'), 'tensorflow-probability/', 'bayesian-neural-networks/', 'bayesian_neural_network/realdata'),
                     help='Directory where data is stored (if using real data).')
 flags.DEFINE_string(
     'model_dir',
-    default=os.path.join(os.getenv('TEST_TMPDIR', '/tmp'),
-                         'bayesian_neural_network/'),
+    default=os.path.join(os.getenv('HOME'), 'tensorflow-probability/', 'bayesian-neural-networks/', 'bayesian_neural_network/model'),
     help="Directory to put the model's fit.")
 flags.DEFINE_integer('viz_steps',
                      default=400,
@@ -105,14 +104,14 @@ def plot_weight_posteriors(names, qm_vals, qs_vals, fname):
 
     ax = fig.add_subplot(1, 2, 1)
     for n, qm in zip(names, qm_vals):
-        sns.distplot(qm.reshape([-1]), ax=ax, label=n)
+        sns.distplot(qm.astype(np.float32).reshape([-1]), ax=ax, label=n)
     ax.set_title('weight means')
     ax.set_xlim([-1.5, 1.5])
     ax.legend()
 
     ax = fig.add_subplot(1, 2, 2)
     for n, qs in zip(names, qs_vals):
-        sns.distplot(qs.reshape([-1]), ax=ax)
+        sns.distplot(qs.astype(np.float32).reshape([-1]), ax=ax)
     ax.set_title('weight stddevs')
     ax.set_xlim([0, 1.])
 
