@@ -12,3 +12,11 @@ https://keras.io/examples/keras_recipes/bayesian_neural_networks/
 **Hamiltonian Monte Carlo**
 
 https://www.tensorflow.org/probability/api_docs/python/tfp/mcmc/HamiltonianMonteCarlo
+
+**Variational Autoencoder**
+
+https://keras.io/examples/generative/vae/
+
+**Convolutional Variational Autoencoder**
+
+https://www.tensorflow.org/tutorials/generative/cvae
