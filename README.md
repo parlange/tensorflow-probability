@@ -1,5 +1,4 @@
 ## Tensorflow Probability (TFP)
-
 **Variational Inference (VI)**
 
 https://www.tensorflow.org/probability/examples/Variational_Inference_and_Joint_Distributions
